@@ -1,5 +1,6 @@
 class Alien 
 	{
-		public int tentacleCount = 6;
-		public int eyeBalls = 12;
+		public string Name {get; set;}
+		public int tentacleCount {get; set;}
+		public int eyeBalls {get; set;}
 	}

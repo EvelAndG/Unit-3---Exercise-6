@@ -35,6 +35,27 @@ class MainClass {
 
 		//creating empty list of alien objects
 		List<Alien> aliensList = new List<Alien>();
+
+		Alien tempAlien;
+
+		//creating alien objects and adding to list
+		for(int i = 0; i<num;i++)
+		{
+			tempAlien = new Alien();
+			tempAlien.Name = $"Alien {i+1}";
+			tempAlien.tentacleCount = i*3;
+			tempAlien.eyeBalls = i*4;
+
+			aliensList.Add(tempAlien);
+		}
+
+		//print out alien objects from aliensList
+		foreach (Alien alien in aliensList)
+		{
+			Console.WriteLine($"Name: {alien.Name}\nTentacle Count: {alien.tentacleCount}\nEyeball Count: {alien.eyeBalls}\n");
+		}
+
+
    
   }
 }
